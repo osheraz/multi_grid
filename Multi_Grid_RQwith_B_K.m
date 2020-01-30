@@ -1,5 +1,5 @@
 %Solution of heat equation  in a ring segment by a multigrid method
-% Osher Azulay 203099247 , Assignment 1, Project 2 , Group 11.
+% Osher Azulay  , Assignment 1, Project 2 , Group 11.
 
 clc;
 clear all;
