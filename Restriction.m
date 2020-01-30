@@ -1,0 +1,6 @@
+function CgRes = Restriction(FgRes,Nc)
+CgRes(1:Nc,1:Nc)=0;
+CgRes(2:Nc-1,2:Nc-1)=(2*(FgRes(2:2:2*(Nc-1)-2,3:2:2*(Nc-1)-1)+FgRes(4:2:2*(Nc-1),3:2:2*(Nc-1)-1)+FgRes(3:2:2*(Nc-1)-1,2:2:2*(Nc-1)-2)+FgRes(3:2:2*(Nc-2)+1,4:2:2*(Nc-1)))+...
+                        (FgRes(2:2:2*(Nc-1)-2,2:2:2*(Nc-1)-2)+FgRes(4:2:2*(Nc-1),4:2:2*(Nc-1))) +FgRes(2:2:2*(Nc-1)-2,4:2:2*(Nc-1))  +FgRes(4:2:2*(Nc-1),2:2:2*(Nc-1)-2)+...
+                       4*FgRes(3:2:2*(Nc-1)-1,3:2:2*(Nc-1)-1))/16;
+end
